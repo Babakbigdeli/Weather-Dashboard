@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80833262c1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    
     <title>Weather Dashboard</title>
 </head>
 <body>
@@ -34,7 +36,8 @@
                     <div class="col-12 border border-dark m-3 rounded">
                         <div class="row">
                             <div class="col-12">
-                                <span id="city-name" class="city-name align-middle"></span>
+                                <span id="cityName" class="cityName align-middle"></span>
+                                <span class="currentDate"></span>
                                 <img id="current-pic" src="placeholder" alt="">
                             </div>
                         </div>
@@ -60,17 +63,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h3>5-Day Forecast</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
+                <div class="five-day-container">
+                    <h1>5-Day Forecast</h1>
+                    <div class="card-row"></div>
                 </div>
             </div>
         </div>
@@ -78,6 +73,8 @@
     <style> 
 
     body {
+    height: 100%;
+    margin: 0;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     }
     .navbar-brand {
@@ -96,9 +93,31 @@
     .forecast-date {
     font-size: 18px;
     }
+    .five-day-container h1 {
+    margin-top: 25px;
+    margin-left: 5%;
+    }
+
+    .card-row {
+    display: flex;
+    flex-direction: row;
+   }
+
+    .five-day-card {
+    margin-left: 10px;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+    background-color: #3498db;
+   }
+
+
+
     </style>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

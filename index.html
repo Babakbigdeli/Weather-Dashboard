@@ -21,24 +21,23 @@
             <div class="col-4 bg-light">
                 <p class="search-header my-1">Search for a city</p>
                 <div class="input-group mb-3">
-                    <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+                    <input id="city-input" type="text" class="form-control" placeholder = "Enter Location Name">
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="button" id="search-button">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
                 </div>
-                <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
                 <form id="history"></form>
             </div>
-            <div class="col-8">
-                <div class="row mr-0">
+           <div class="col-8">
+               <div class="row mr-0">
                     <div class="col-12 border border-dark m-3 rounded">
                         <div class="row">
                             <div class="col-12">
-                                <span id="city-name" class="city-name align-middle"></span>
+                                <span id="cityName" class="cityName align-middle"></span>
                                 <span class="currentDate"></span>
-                                <img id="current-pic" src="placeholder" alt="">
+                                <img id="current-pic" alt="">
                             </div>
                         </div>
                         <div class="row">
@@ -89,7 +88,7 @@
     font-weight: bold;
     }
 
-    .city-name {
+    .cityName {
     font-size: 50px;
     }
   

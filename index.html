@@ -36,7 +36,7 @@
                     <div class="col-12 border border-dark m-3 rounded">
                         <div class="row">
                             <div class="col-12">
-                                <span id="cityName" class="cityName align-middle"></span>
+                                <span id="city-name" class="city-name align-middle"></span>
                                 <span class="currentDate"></span>
                                 <img id="current-pic" src="placeholder" alt="">
                             </div>
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-12 d-flex">
+                            <div class="col-12">
                                 <p id="UV-index"></p>
                             </div>
                         </div>
@@ -80,6 +80,9 @@
     .navbar-brand {
     font-size: 50px;
     }
+    .container {
+    margin-left: 2pc;    
+    }
 
     .search-header {
     font-size: 24px;
@@ -87,37 +90,25 @@
     }
 
     .city-name {
-    font-size: 30px;
+    font-size: 50px;
     }
-
-    .forecast-date {
-    font-size: 18px;
-    }
-    .five-day-container h1 {
-    margin-top: 25px;
-    margin-left: 5%;
-    }
-
+  
     .card-row {
     display: flex;
     flex-direction: row;
    }
 
     .five-day-card {
-    margin-left: 10px;
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
-    color: white;
-    font-size: large;
-    background-color: #3498db;
+    margin-left: 2px;
+    color: rgb(237, 245, 240);
+    background-color: #ff8585;
    }
 
 
 
     </style>
 
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

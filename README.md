@@ -41,8 +41,10 @@ It also includes a search history so that users can access their past search ter
 
 	. Babak Bigdeli 
 
+* [Screenshot of weather dashboard](https://github.com/Babakbigdeli/Weather-Dashboard/blob/main/Screenshot.JPG)
+* [Link to deployed app] (https://babakbigdeli.github.io/Weather-Dashboard/)
 
 **Babak Bigdeli**
-- [LinkedIn](https://www.linkedin.com/in/babak-bigdeli-3b999055)
-- [Link to Github](https://github.com/Babakbigdeli)
-- [Portfolio](https://babakbigdeli.github.io/Portfolio/)
+* [LinkedIn](https://www.linkedin.com/in/babak-bigdeli-3b999055)
+* [Link to Github](https://github.com/Babakbigdeli)
+* [Portfolio](https://babakbigdeli.github.io/Portfolio/)
